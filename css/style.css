@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.light {
+    background-image: url(../images/bg-mobile-light.jpg);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.dark {
+    background-image: url(../images/bg-mobile-dark.jpg);
+    background-color: hsl(235, 21%, 11%);
+}
+
+.dark,
+.light {
+    background-repeat: no-repeat;
+    background-size: 24rem;
+    background-position: center;
+    background-position-y: top;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.light main,
+.dark main {
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.light header,
+.dark header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem;
+    margin-top: 1.6rem;
+    width: 24rem;
+}
+
+.light header h1,
+.dark header h1 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+}
+
+.light main .new-todo {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.dark main .new-todo {
+    background-color: hsl(235, 24%, 19%);
+}
+
+
+.light main .new-todo,
+.dark main .new-todo {
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+    width: 22rem;
+}
+
+.light main div input[type=text],
+.dark main div input[type=text] {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.8rem;
+    color: hsl(235, 19%, 35%);
+    font-family: 'Josefin Sans', sans-serif;
+    outline: none;
+    font-size: 18px;
+}
+
+.dark main div input[type=text]:focus {
+    color: white;
+}
+
+.light main div input[type=text]:focus {
+    color: black;
+}
+
+.light main div .check,
+.dark main div .check {
+    height: 1.5rem;
+    width: 1.7rem;
+    background-color: none;
+    border-radius: 1rem;
+    border: 1px solid hsl(237, 14%, 26%);
+}
+
+.light main div .check:hover,
+.dark main div .check:hover {
+    border: double 2px transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.dark main div .check:hover {
+    background-image: linear-gradient(hsl(235, 24%, 19%), hsl(235, 24%, 19%)),
+        radial-gradient(circle at top left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.light main div .check:hover {
+    background-image: linear-gradient(hsl(0, 0%, 98%), hsl(0, 0%, 98%)),
+        radial-gradient(circle at top left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.light main div .checked,
+.dark main div .checked {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 1rem;
+    background: url(../images/icon-check.svg),
+        linear-gradient(120deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dark main div .checked:hover,
+.light main div .checked:hover {
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: double 2px transparent;
+}
+
+.dark main div .checked:hover {
+    background-image: linear-gradient(hsl(235, 24%, 19%), hsl(235, 24%, 19%)),
+        radial-gradient(circle at top left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.light main div .checked:hover {
+    background-image: linear-gradient(hsl(0, 0%, 98%), hsl(0, 0%, 98%)),
+        radial-gradient(circle at top left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.light main .info,
+.light main section {
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.dark main .info,
+.dark main section {
+    background-color: hsl(235, 24%, 19%);
+}
+
+
+.light main section,
+.dark main section {
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 300;
+    width: 22rem;
+    padding: 0.2rem 0.2rem 0.3rem 0.2rem;
+}
+
+.light main section .list {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(235, 19%, 35%);
+    font-weight: 400;
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+.dark main section .list {
+    background-color: hsl(235, 24%, 19%);
+    color: white;
+    border-bottom: 1px solid hsl(233, 14%, 35%);
+}
+
+.light main section .list,
+.dark main section .list {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.light main section .list:hover img,
+.dark main section .list:hover img {
+    display: flex;
+}
+
+.light main section .list .check-list,
+.dark main section .list .check-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.light main section .list .check-list .check,
+.dark main section .list .check-list .check {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.light main section img,
+.dark main section img {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: none;
+}
+
+.light main .info,
+.dark main .info {
+    display: flex;
+    width: 22rem;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: -0.3rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    color: hsl(234, 11%, 52%);
+}
+
+.dark main .info>p:not(:first-child):hover,
+.dark main .info .full p:hover {
+    color: white;
+}
+
+.light main .info p,
+.dark main .info p {
+    cursor: pointer;
+}
+
+.light main .info .full,
+.dark main .info .full {
+    display: none;
+}
+
+.light main .info .full p:hover,
+.light main .info>p:not(:first-child):hover {
+    color: black;
+}
+
+.light main .footer {
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.dark main .footer {
+    background-color: hsl(235, 24%, 19%);
+}
+
+.light main .footer,
+.dark main .footer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 22rem;
+    border-radius: 0.5rem;
+}
+
+.light main .footer a,
+.dark main .footer a {
+    text-decoration: none;
+    color: hsl(234, 11%, 52%);
+}
+
+.dark main .footer a:hover {
+    color: white;
+}
+
+.light main .footer a:hover {
+    color: black;
+}
+
+
+
+
+@media (min-width:1440px) {
+    .light {
+        background-image: url(../images/bg-desktop-light.jpg);
+    }
+
+    .dark {
+        background-image: url(../images/bg-desktop-dark.jpg);
+    }
+
+    .dark,
+    .light {
+        background-size: 90rem;
+    }
+
+    .light main,
+    .dark main {
+        width: 44rem;
+    }
+
+    .light header,
+    .dark header {
+        width: 44rem;
+    }
+
+    .light main .new-todo,
+    .dark main .new-todo {
+        width: 42rem;
+    }
+
+    .light main section,
+    .dark main section {
+        margin-top: 1.5rem;
+        padding: 0.2rem;
+        font-weight: 300;
+        width: 42rem;
+        border-radius: 0rem;
+    }
+
+    .dark main .info,
+    .light main .info {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        color: hsl(234, 11%, 52%);
+        width: 42rem;
+        border-radius: 0 0 0.5rem 0.5rem;
+        margin-top: -0.2rem;
+    }
+
+    .light main .footer,
+    .dark main .footer {
+        display: none;
+    }
+
+    .light main .info .full,
+    .dark main .info .full {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}
